@@ -19,6 +19,7 @@ import { BetterHighlightDirective } from './better-highlight/better-highlight.di
 import { UnlessDirective } from './unless.directive';
 import { AccountComponent } from './account/account.component';
 import { NewAccountComponent } from './new-account/new-account.component';
+import { AccountService } from './account.service';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,7 @@ import { NewAccountComponent } from './new-account/new-account.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [AccountService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
